@@ -14,9 +14,11 @@
         layout: 'products'
     })
 
-    const {data: products} = await useFetch('https://fakestoreapi.com/products')
+    const {data: products} = await useFetch(
+        'https://fakestoreapi.com/products'
+        )
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 
 </style>
