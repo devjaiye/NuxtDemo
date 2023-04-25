@@ -17,6 +17,14 @@
     const {data: products} = await useFetch(
         'https://fakestoreapi.com/products'
         )
+   
+   //..Meta data 
+   useHead({
+    title: 'App Buy | Products',
+    meta: [
+        {name: 'description', content: 'Product items'}
+    ]
+   })
 </script>
 
 <style scoped>

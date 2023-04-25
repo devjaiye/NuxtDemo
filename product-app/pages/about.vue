@@ -11,11 +11,15 @@
             Duis aute irure dolor fugiat nulla pariatur. Excepteur sint occaecat cupidatat
             non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </P>
+        <div>{{ data }}</div>
     </div>
 </template>
 
 <script setup>
-
+    const {data} = await useFetch('/api/app?name=lorem', {
+        method: 'post',
+        body: {age: 40}
+    })
 </script>
 
 <style scoped>

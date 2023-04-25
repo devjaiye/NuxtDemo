@@ -9,10 +9,11 @@
                 <p class="text-xl my-7">Price - ${{ product.price }}</p>
                 <h3 class="font-bold border-b-2 mb-4 pb-2">Product description:</h3>
                 <p class="mb-7">{{ product.description }}</p>
+                <button class="btn">Buy Now</button>
             </div> 
         </div>
     </div>
-</template>
+</template> 
 
 <script setup>
     const {product} = defineProps(['product'])

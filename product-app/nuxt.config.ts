@@ -2,6 +2,26 @@
 export default defineNuxtConfig({
         modules: [
           '@nuxtjs/tailwindcss'
-        ]
-      
+        ], 
+        //..Meta data 
+        app: {
+          head: {
+            title: 'App Buy',
+            meta: [
+              {
+                name: 'description',
+                content: 'Best place to buy your products'
+              }
+            ], 
+            //..Material Icon link
+            link: [
+              {
+                rel: "stylesheet", 
+                 href: "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200",
+              }
+            ]
+          }
+        }
 })
+        // rel: 'stylesheet', 
+        // href: 'https://fonts.googleapis.com/icon?family=Material+Icons'
