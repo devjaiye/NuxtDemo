@@ -16,10 +16,7 @@
 </template>
 
 <script setup>
-    const {data} = await useFetch('/api/app?name=lorem', {
-        method: 'post',
-        body: {age: 40}
-    })
+    const {data} = await useFetch('/api/app')
 </script>
 
 <style scoped>
