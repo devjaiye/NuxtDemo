@@ -21,7 +21,13 @@ export default defineNuxtConfig({
               }
             ]
           }
+        },
+        //..configure the .env file to be accessed in the frontend but wont be exposed to users
+        runtimeConfig: {
+          currencyKey: process.env.CURRENCY_API_KEY
         }
 })
-        // rel: 'stylesheet', 
-        // href: 'https://fonts.googleapis.com/icon?family=Material+Icons'
+        
+
+// rel: 'stylesheet', 
+// href: 'https://fonts.googleapis.com/icon?family=Material+Icons'
